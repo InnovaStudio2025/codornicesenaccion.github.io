@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <link rel="icon" href="marca.png">
@@ -34,11 +34,13 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 25px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
+      text-align: center;
     }
     header h1 img {
       height: 145px;
@@ -127,17 +129,54 @@
       max-width: 65%;
     }
     .footer-logo {
-      text-align: left; /* Adjusted to move logo to the left */
+      text-align: left;
       flex: 1;
-      padding-left: 2rem; /* Add padding to move logo a bit more to the left */
+      padding-left: 2rem;
     }
     .footer-logo img {
-      height: 140px; /* Increased size */
+      height: 140px;
     }
+
     @keyframes fadeInUp {
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      header h1 img {
+        width: 120px;
+        height: auto;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      .footer-text {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .footer-logo {
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .footer-logo img {
+        height: 120px;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+
+      main {
+        padding: 1rem;
       }
     }
   </style>
