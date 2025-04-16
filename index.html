@@ -1,13 +1,4 @@
-<!DOCTYPE html> 
-<html lang="es">
-<head>
-  <link rel="icon" href="marca.png">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codornices en Acción</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
+<style>
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
@@ -25,7 +16,7 @@
     header {
       background: linear-gradient(to bottom, #ffffff 75%, #ffc47d);
       color: black;
-      padding: 3rem 1.5rem;
+      padding: 2.5rem 1.5rem;
       text-align: center;
       position: sticky;
       top: 0;
@@ -34,30 +25,30 @@
     }
     header h1 {
       margin: 0;
-      font-size: 25px;
+      font-size: 1.8rem; /* Tamaño más pequeño del título */
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
-      text-align: center;
     }
     header h1 img {
-      height: 145px;
-      width: 190px;
+      height: 100px; /* Tamaño ajustado del logo */
+      width: auto;
     }
     header p {
       margin: 0.5rem 0 2rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.75rem;
+      gap: 0.5rem;
     }
     nav a {
-      padding: 0.6rem 1.2rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
       background: rgba(255, 255, 255, 0.6);
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -136,7 +127,6 @@
     .footer-logo img {
       height: 140px;
     }
-
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -144,108 +134,33 @@
       }
     }
 
-    /* Responsive */
+    /* === Estilos Responsivos === */
     @media screen and (max-width: 768px) {
-      header h1 img {
-        width: 120px;
-        height: auto;
-      }
-
-      nav {
+      header h1 {
+        font-size: 1.4rem;
         flex-direction: column;
       }
-
+      header h1 img {
+        height: 70px;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      nav a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+      }
       .footer-text {
         max-width: 100%;
         text-align: center;
       }
-
       .footer-logo {
         padding-left: 0;
         text-align: center;
-        width: 100%;
         margin-top: 1rem;
       }
-
       .footer-logo img {
-        height: 120px;
-      }
-
-      section {
-        padding: 1.5rem;
-      }
-
-      main {
-        padding: 1rem;
+        height: 100px;
       }
     }
   </style>
-</head>
-<body>
-  <header>
-    <h1><img src="marca.png" alt="Logo Codorniz"> Codornices en Acción</h1>
-    <p>Estrategias para una producción exitosa de huevos en Suaita</p>
-    <nav>
-      <a href="#introduccion">Introducción</a>
-      <a href="#problematica">Problemática</a>
-      <a href="#justificacion">Justificación</a>
-      <a href="#objetivos">Objetivos</a>
-      <a href="#marco">Marco Teórico</a>
-      <a href="#actividades">Plan de Actividades</a>
-    </nav>
-  </header>
-  <main>
-    <section id="introduccion">
-      <h2><i class="bi bi-lightbulb"></i> Introducción</h2>
-      <p>El manejo adecuado del entorno en un criadero casero de codornices es crucial para garantizar el bienestar de las aves y la productividad de los huevos. Factores como temperatura, humedad y espacio, junto con la exposición a la luz solar y la conservación del calor nocturno, son esenciales para mantener una producción eficiente y sostenible.</p>
-      <img src="https://images.unsplash.com/photo-1582738416649-05d4c1939d58?auto=format&fit=crop&w=800&q=60" alt="Codornices en su criadero">
-    </section>
-    <section id="problematica">
-      <h2><i class="bi bi-exclamation-circle"></i> Problemática</h2>
-      <p>El manejo inadecuado del entorno en un criadero casero de codornices puede causar estrés, pérdida de peso e incluso la muerte de las aves. Esto se traduce en una disminución de la producción y calidad de los huevos.</p>
-      <img src="https://images.unsplash.com/photo-1599960545414-9406f291e691?auto=format&fit=crop&w=800&q=60" alt="Condiciones en corral de codornices">
-    </section>
-    <section id="justificacion">
-      <h2><i class="bi bi-clipboard-check"></i> Justificación</h2>
-      <p>Implementar un ambiente controlado con temperatura adecuada, buena ventilación y exposición a la luz solar contribuye a una mejor calidad de vida de las codornices, mayor productividad y facilidad en el manejo diario del criadero.</p>
-      <img src="https://images.unsplash.com/photo-1643309249297-f86a3745de86?auto=format&fit=crop&w=800&q=60" alt="Luz solar en instalaciones avícolas">
-    </section>
-    <section id="objetivos">
-      <h2><i class="bi bi-bullseye"></i> Objetivos</h2>
-      <p><strong>General:</strong> Mejorar el bienestar y la productividad mediante el manejo del entorno.</p>
-      <ul>
-        <li>Regular temperatura con lonas térmicas.</li>
-        <li>Controlar humedad elevando el corral.</li>
-        <li>Optimizar espacio y luz solar.</li>
-        <li>Crear una marca para la comercialización.</li>
-      </ul>
-      <img src="https://images.unsplash.com/photo-1626168511116-e241703cb6d6?auto=format&fit=crop&w=800&q=60" alt="Huevos de codorniz empacados">
-    </section>
-    <section id="marco">
-      <h2><i class="bi bi-book"></i> Marco Teórico</h2>
-      <p>Desde Japón hasta Colombia, la coturnicultura ha crecido como una alternativa rentable y nutritiva. La especie Coturnix coturnix japónica presenta ventajas en resistencia y productividad. Además, se destacan los parámetros de producción y requerimientos nutricionales que aseguran una producción eficiente.</p>
-      <img src="https://images.unsplash.com/photo-1606115915090-378a12ef62b3?auto=format&fit=crop&w=800&q=60" alt="Huevos de codorniz sobre paja">
-    </section>
-    <section id="actividades">
-      <h2><i class="bi bi-calendar-check"></i> Plan de Actividades</h2>
-      <p>El plan incluye regular la temperatura, controlar la humedad, asegurar buena iluminación, realizar limpiezas periódicas y establecer canales de venta con empaque adecuado y monitoreo de calidad.</p>
-      <img src="https://images.unsplash.com/photo-1638459714141-0808c5f35d5e?auto=format&fit=crop&w=800&q=60" alt="Actividades de granja">
-    </section>
-  </main>
-  <footer>
-    <div class="footer-text">
-      <strong>Autores:</strong><br>
-      Erik Santiago López Patarroyo<br>
-      Edwin Andrés Arenas Bohórquez<br><br>
-      <strong>Docentes Técnica:</strong><br>
-      Gilma Lizarazo Pinzón<br>
-      Manuel Erardo Zárate<br><br>
-      <strong>COLEGIO INTEGRADO LUCAS CABALLERO</strong><br>
-      Grado Undécimo – Suaita, 2025
-    </div>
-    <div class="footer-logo">
-      <img src="https://colucas.edu.co/img/content/sixbox_logoazul.png" alt="Escudo Colegio Lucas Caballero">
-    </div>
-  </footer>
-</body>
-</html>
